@@ -1,0 +1,584 @@
+/* =========================================
+   Assignment #1 Part #2
+   CSS Styling
+   Student: Aizada Nazymkyzy
+   Group: MT-2504
+   ========================================= */
+
+
+/* =========================================
+   TASK 4: ELEMENT SELECTORS
+   ========================================= */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #243447;
+
+    line-height: 1.6;
+
+}
+
+
+h2 {
+
+    color: #245b7a;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+}
+
+
+p {
+
+    font-size: 16px;
+
+}
+
+
+a {
+
+    color: #245b7a;
+
+}
+
+
+a:hover {
+
+    color: #8a3d16;
+
+}
+
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.site-header {
+
+    background-color: #16324f;
+
+    color: white;
+
+    padding: 16px 5%;
+
+}
+
+
+.nav-wrap {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.logo {
+
+    font-weight: bold;
+
+    font-size: 1.2rem;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 18px;
+
+}
+
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+main {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+
+    background-color: #e8f1f8;
+
+    padding: 5%;
+
+}
+
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+}
+
+
+
+/* =========================================
+   TASK 5: ID SELECTOR
+   ========================================= */
+
+#main-heading {
+
+    color: #16324f;
+
+    font-size: 2.4rem;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* =========================================
+   TASK 5: CLASS SELECTOR
+   ========================================= */
+
+.highlight {
+
+    background-color: #fff3df;
+
+    border-left: 5px solid #d9822b;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+}
+
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.section {
+
+    background-color: white;
+
+    margin: 24px 0;
+
+    padding: 28px;
+
+    border: 1px solid #d6e0e8;
+
+    border-radius: 14px;
+
+}
+
+
+
+/* =========================================
+   BOX MODEL
+   ========================================= */
+
+.card-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.card {
+
+    background-color: #f8fbfd;
+
+    border: 2px solid #b8ccda;
+
+    padding: 20px;
+
+    margin: 5px;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =========================================
+   IMAGE
+   ========================================= */
+
+.profile-photo {
+
+    width: 80%;
+
+    max-width: 280px;
+
+    border: 5px solid white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.button-link,
+input[type="submit"] {
+
+    display: inline-block;
+
+    background-color: #245b7a;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+
+input[type="submit"]:hover,
+.button-link:hover {
+
+    background-color: #16324f;
+
+}
+
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.schedule-table,
+.layout-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+.schedule-table th,
+.schedule-table td,
+.layout-table td {
+
+    border: 1px solid #b8ccda;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+
+.schedule-table th {
+
+    background-color: #245b7a;
+
+    color: white;
+
+}
+
+
+.schedule-table tr:nth-child(even) {
+
+    background-color: #eef5f9;
+
+}
+
+
+
+/* =========================================
+   TASK 9: POSITIONING
+   ========================================= */
+
+.position-static {
+
+    position: static;
+
+    background-color: #eef5f9;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.position-relative {
+
+    position: relative;
+
+    top: 8px;
+
+    left: 12px;
+
+    background-color: #fff3df;
+
+    padding: 12px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.position-area {
+
+    position: relative;
+
+    min-height: 90px;
+
+    background-color: #e8f1f8;
+
+    padding: 20px;
+
+}
+
+
+.position-absolute {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    background-color: #d9822b;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+}
+
+
+
+/* =========================================
+   TASK 10: SIZING
+   ========================================= */
+
+.rem-demo {
+
+    font-size: 1.2rem;
+
+}
+
+
+.em-demo {
+
+    font-size: 1.1em;
+
+}
+
+
+
+/* =========================================
+   TASK 11: FLOAT AND CLEAR
+   ========================================= */
+
+.float-row {
+
+    overflow: auto;
+
+}
+
+
+.float-left {
+
+    float: left;
+
+    width: 42%;
+
+    background-color: #e8f1f8;
+
+    border: 2px solid #7ca5bd;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+}
+
+
+.float-right {
+
+    float: right;
+
+    width: 42%;
+
+    background-color: #fff3df;
+
+    border: 2px solid #d9aa70;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+}
+
+
+.clear-box {
+
+    clear: both;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #f1f1f1;
+
+    border: 1px dashed #777;
+
+}
+
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+form {
+
+    background-color: #f8fbfd;
+
+    padding: 20px;
+
+    border: 1px solid #d6e0e8;
+
+    border-radius: 10px;
+
+}
+
+
+input[type="text"],
+input[type="email"] {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 10px;
+
+    border: 1px solid #aebdca;
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+
+}
+
+
+input[type="color"] {
+
+    width: 60px;
+
+    height: 40px;
+
+}
+
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+
+    background-color: #16324f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 24px;
+
+    margin-top: 30px;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .hero-grid,
+    .card-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .nav-wrap {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .float-left,
+    .float-right {
+
+        float: none;
+
+        width: 100%;
+
+        margin-bottom: 15px;
+
+    }
+
+}
